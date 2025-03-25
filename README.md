@@ -10,9 +10,10 @@ JEONJIYOEN Oriented Object Detection CODE
 
 | Task                     | Dataset | AP                                   | 
 | ------------------------ | ------- | ------------------------------------ | 
-| RotatedYOLOv8            | DOTA    | 72.8                                 | 
+| base(RotatedYOLOv8)      | DOTA    | 72.8                                 | 
+| Prototype1               | DOTA    | 78.0                                 | 
 | Prototype3               | DOTA    | 79.3                                 | 
-| Prototype4               | DOTA    | 79.8(single-scale)/81.3(multi-scale) | 
+| Prototype4               | DOTA    | 79.5                                 |      
 
 
 <div align=center>
