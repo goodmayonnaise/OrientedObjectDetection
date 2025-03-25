@@ -32,15 +32,18 @@ Below are quick steps for installation.
 Please refer to [Install Guide](https://mmrotate.readthedocs.io/en/latest/install.html) for more detailed instruction.
 
 ```shell
-conda create -n open-mmlab python=3.7 pytorch==1.7.0 cudatoolkit=10.1 torchvision -c pytorch -y
-conda activate open-mmlab
-pip install openmim
-mim install mmcv-full
-mim install mmdet
-git clone https://github.com/open-mmlab/mmrotate.git
-cd mmrotate
-pip install -r requirements/build.txt
-pip install -v -e .
+# docker build 
+docker run --name mmrotate_jyjeon --gpus all --shm-size=1024gb -it -v mmrotate_path/:/mmrotate -v /home/data/:/mmrotate/data -e TZ=Asia/Seoul mmrotate
+```
+
+```shell 
+# additaional installation 
+pip install gpustat
+pip install typing_extentsions 
+pip install einops
+pip install tensorboard
+pip install setuptools==59.5.0
+pip install timm
 ```
 
 ## Get Started
@@ -56,3 +59,4 @@ python demo/image_demo_jy.py work_dirs/config.py work_dirs/pth.pth
 python tools/heatmap.py 
 python tools/heatmap/*.py 
 ```
+
