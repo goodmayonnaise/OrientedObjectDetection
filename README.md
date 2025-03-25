@@ -19,13 +19,10 @@ JEONJIYOEN Oriented Object Detection CODE
 <img src="https://user-images.githubusercontent.com/12907710/208044554-1e8de6b5-48d8-44e4-a7b5-75076c7ebb71.png"/>
 </div>
 
-**0.3.4** was released in 01/02/2023:
 
-- Fix compatibility with numpy, scikit-learn, and e2cnn.
-- Support empty patch in Rotate Transform
-- use iof for RRandomCrop validation
-
-Please refer to [changelog.md](docs/en/changelog.md) for details and release history.
+- 내용1
+- 내용2
+- 내용3
 
 ## Installation
 
