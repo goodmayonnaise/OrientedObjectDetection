@@ -17,7 +17,7 @@ JEONJIYOEN Oriented Object Detection CODE
 
 
 <div align=center>
-<img src="https://user-images.githubusercontent.com/12907710/208044554-1e8de6b5-48d8-44e4-a7b5-75076c7ebb71.png"/>
+<img src="https://github.com/user-attachments/assets/26c727d2-0f59-484f-8ebb-26f6a337b742"/>
 </div>
 
 
