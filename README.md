@@ -11,8 +11,9 @@ JEONJIYOEN Oriented Object Detection CODE
 | Task                     | Dataset | AP                                   | 
 | ------------------------ | ------- | ------------------------------------ | 
 | base(RotatedYOLOv8)      | DOTA    | 72.8                                 | 
-| Prototype1               | DOTA    | 78.0                                 | 
-| Prototype3               | DOTA    | 79.3                                 | 
+| Prototype1               | DOTA    | 78.1                                 | 
+| Prototype2               | DOTA    | 78.7                                 | 
+| Prototype3               | DOTA    | 79.4                                 | 
 | Prototype4               | DOTA    | 79.5                                 |      
 
 
@@ -20,10 +21,18 @@ JEONJIYOEN Oriented Object Detection CODE
 <img src="https://github.com/user-attachments/assets/26c727d2-0f59-484f-8ebb-26f6a337b742"/>
 </div>
 
-
 - 내용1
 - 내용2
 - 내용3
+
+
+### Demo
+<div align=center>
+<img src="https://github.com/user-attachments/assets/651786cf-0548-49e7-b812-5b476df4cb2a"/>
+```shell
+./DEMO_jy 
+```
+- use gradio demo page
 
 ## Installation
 
