@@ -17,7 +17,7 @@ JEONJIYOEN Oriented Object Detection CODE
 | Prototype4               | DOTA    | 79.5                                 |      
 
 
-<div align=center>
+<!-- <div align=center> -->
 <img src="https://github.com/user-attachments/assets/26c727d2-0f59-484f-8ebb-26f6a337b742"/>
 </div>
 
@@ -28,7 +28,8 @@ JEONJIYOEN Oriented Object Detection CODE
 
 ### Demo
 <div align=center>
-<img src="https://github.com/user-attachments/assets/651786cf-0548-49e7-b812-5b476df4cb2a"/>
+<img src="https://github.com/user-attachments/assets/a3dc0fe5-94d0-4152-99a6-d0b326e4cf95"/>
+</div>
 ```shell
 ./DEMO_jy 
 ```
