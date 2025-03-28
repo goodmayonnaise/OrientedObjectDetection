@@ -10,7 +10,7 @@ _base_ = [ './prototype4.py']
 auto_resume = False
 find_unused_parameters = True
 
-work_dir = './work_dirs/objectness-ver1'
+work_dir = './work_dirs/objectness-ver2'
 dataset_type = 'DOTADataset'
 data_root = 'data/split_ms_dota2_2/'
 samples_per_gpu = 8
@@ -25,7 +25,7 @@ max_epochs = 12
 model = dict(
     bbox_head=dict(
         type='RotatedYOLOv8Head',
-        loss_cls=dict(type='ObjectnessLoss', loss_weight=1.0, obj_loss_weight=1.0, ver=1),
+        loss_cls=dict(type='ObjectnessLoss', loss_weight=1.0, obj_loss_weight=1.0, ver=2),
         )
     )
 

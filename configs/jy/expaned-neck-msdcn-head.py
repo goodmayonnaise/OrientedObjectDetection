@@ -40,7 +40,7 @@ norm_cfg = dict(type='BN', momentum=0.03, eps=0.001)  # Normalization config
 strides = [8, 16, 32]
 
 model = dict(
-    type='RotatedYOLOv6',
+    type='RotatedYOLOv8',
     backbone=dict(
         type='YOLOv8CSPDarknet',
         arch='P5',

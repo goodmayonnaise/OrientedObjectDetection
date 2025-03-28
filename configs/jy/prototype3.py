@@ -34,7 +34,6 @@ loss_bbox_weight = 7.5
 
 model = dict(
     type='RotatedYOLOv8',
-    
     backbone=dict(
         type='CSPNeXtLarge',
         arch='P5',
