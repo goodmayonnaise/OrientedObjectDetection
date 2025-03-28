@@ -82,7 +82,6 @@ class RotatedMSDCNHead(RotatedYOLOv8Head):
             # cls (.01 objects, 80 classes, 640 img)
             cls_pred[-1].bias.data[:self.num_classes] = math.log(
                 5 / self.num_classes / (1024 / stride)**2)
-                # 5 / self.num_classes / (640 / stride)**2)
 
     def _init_layers(self):
         # from mmrotate.models.utils import pack
@@ -245,7 +244,6 @@ class RotatedMSDCNHead(RotatedYOLOv8Head):
         return multi_apply(self.forward_single, x, self.deform, self.deform2, self.deform3,
                             self.cls_preds, self.reg_preds, self.ang_preds, self.scales, self.featmap_strides)
 
-    # def forward_single(self, x: Tensor, deform_conv:nn.Module, deform2_conv:nn.Module, deform3_conv:nn.Module,
     def forward_single(self, x: Tensor, deform_conv:nn.Module, deform2_conv, deform3_conv,
                        cls_pred: nn.Module, reg_pred: nn.Module,  ang_pred: nn.Module, 
                        scale: List, stride) -> Tuple[Tensor, Tensor]:
