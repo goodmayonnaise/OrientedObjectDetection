@@ -292,3 +292,5 @@ class YOLOv8PAFPN(YOLOv6RepPAFPN):
             add_identity=False,
             norm_cfg=self.norm_cfg,
             act_cfg=self.act_cfg)
+    
+
