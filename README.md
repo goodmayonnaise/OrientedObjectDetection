@@ -72,7 +72,6 @@ python tools/heatmap/*.py
 ```
 
 ## models info
-```shell 
 
 | model info            | config path                           |
 | --------------------- | ------------------------------------- | 
@@ -87,4 +86,3 @@ python tools/heatmap/*.py
 | prototype3            | configs/jy/prototype3.py              | 
 | prototype4            | configs/jy/prototype4.py              | 
 | --------------------- | ------------------------------------- | 
-```
