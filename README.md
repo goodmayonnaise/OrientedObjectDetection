@@ -80,5 +80,5 @@ python tools/heatmap/*.py
 | objectness loss       | configs/jy/objectness-loss.py         | 
 |                       | configs/jy/objectness-loss2.py        | 
 |                       | configs/jy/objectness-loss3.py        |
-| prototype3            | configs/jy/prototype3.py              | 
-| prototype4            | configs/jy/prototype4.py              | 
+| prototype             | configs/jy/prototype3.py              | 
+|                       | configs/jy/prototype4.py              | 
