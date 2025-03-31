@@ -8,19 +8,18 @@ import torch
 from torch import Tensor, nn
 
 from ..blocks import *
-from ..builder import ROTATED_HEADS, build_loss
+from ..builder import ROTATED_HEADS
 from .rotated_yolov8_head import RotatedYOLOv8Head
 
 
 from mmcv.cnn import ConvModule, Scale
 from mmcv.runner import force_fp32
 from mmdet.core import reduce_mean, multi_apply
-from mmrotate.core import multiclass_nms_rotated
 
 
 
 @ROTATED_HEADS.register_module()
-class RotatedDecoupledBGHead(RotatedYOLOv8Head):
+class RotatedDecoupledObjHead(RotatedYOLOv8Head):
     """YOLOv8 Head"""
     def __init__(self,
                  num_classes: int,
@@ -382,7 +381,7 @@ class RotatedDecoupledBGHead(RotatedYOLOv8Head):
 동일 cls head에서 1x1만 decouple obj, cls  
 '''
 @ROTATED_HEADS.register_module()
-class RotatedDecoupled1x1ObjHead(RotatedDecoupledBGHead):
+class RotatedDecoupled1x1ObjHead(RotatedDecoupledObjHead):
     """YOLOv8 Head"""
     def __init__(self,
                  num_classes: int,
