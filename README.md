@@ -71,3 +71,20 @@ python tools/heatmap.py
 python tools/heatmap/*.py 
 ```
 
+# models info
+```shell 
+
+| model info            | config path                           |
+| --------------------- | ------------------------------------- | 
+| MSDCN Head            | configs/jy/msdcn-head.py              |
+| --------------------- | ------------------------------------- | 
+| MSDCN Head p3 to p6   | configs/jy/expaned-neck-msdcn-head.py |
+| --------------------- | ------------------------------------- | 
+| objectness loss       | configs/jy/objectness-loss.py         | 
+|                       | configs/jy/objectness-loss2.py        | 
+|                       | configs/jy/objectness-loss3.py        |
+| --------------------- | ------------------------------------- | 
+| prototype3            | configs/jy/prototype3.py              | 
+| prototype4            | configs/jy/prototype4.py              | 
+| --------------------- | ------------------------------------- | 
+```
