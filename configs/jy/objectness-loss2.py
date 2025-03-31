@@ -22,7 +22,7 @@ model = dict(
     bbox_head=dict(
         type='RotatedDecoupledObjHead',
         num_classes=num_classes,
-        loss_cls=dict(type='ObjectnessLoss3', loss_weight=1.0, obj_loss_weight=1.0, ver=1),
+        loss_cls=dict(type='ObjectnessLoss2', loss_weight=1.0, obj_loss_weight=1.0, ver=1),
         train_cfg=dict(
             assigner=dict(
                 type='OBBLabelAssigner',

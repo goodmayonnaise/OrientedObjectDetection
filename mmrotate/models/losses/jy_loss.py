@@ -114,10 +114,10 @@ version=1) objectness가 focal로 인한 학습에 영향을 안줘야 함 -> de
 version=2) objectness가 두 loss를 통해 학습 
 '''
 @ROTATED_LOSSES.register_module()
-class ObjectnessLoss2(nn.Module):
+class ObjectnessLoss(nn.Module):
     def __init__(self, reduction='mean', loss_weight=1.0, obj_loss_weight=1.0, gamma=2.0, alpha=0.25, 
                  ver=1, **kwargs):
-        super(ObjectnessLoss2, self).__init__()
+        super(ObjectnessLoss, self).__init__()
         self.reduction = reduction 
         self.loss_weight = loss_weight
         self.obj_loss_weight = obj_loss_weight
@@ -162,10 +162,10 @@ class ObjectnessLoss2(nn.Module):
 decoupled obj, cls head 
 '''
 @ROTATED_LOSSES.register_module()
-class ObjectnessLoss3(nn.Module):
+class ObjectnessLoss2(nn.Module):
     def __init__(self, reduction='mean', loss_weight=1.0, obj_loss_weight=1.0, gamma=2.0, alpha=0.25, 
                  ver=1, **kwargs):
-        super(ObjectnessLoss3, self).__init__()
+        super(ObjectnessLoss2, self).__init__()
         self.reduction = reduction 
         self.loss_weight = loss_weight
         self.obj_loss_weight = obj_loss_weight
